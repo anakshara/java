@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner CD=new Scanner(System.in);
+        
+        double fl=CD.nextDouble();
+        int n1=CD.nextInt();
+        int n2=CD.nextInt();
+        int n3=CD.nextInt();
+        
+        System.out.println((int)Math.floor(fl));
+        System.out.println((int)Math.ceil(fl));
+        System.out.println((int)Math.sqrt(n1));
+        System.out.println((int)Math.pow(n2,n3));
+        }
+}
