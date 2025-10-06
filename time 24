@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner FG =new Scanner(System.in);
+        
+        int h= FG.nextInt();
+        int m = FG.nextInt();
+        int s = FG.nextInt();
+        
+         m +=(s/60);
+         s = s%60;
+         h += m/60;
+         m = m%60;
+        System.out.println("Total Number of hours is " + h);
+        System.out.println("Total Number of minutes is " + m);
+        System.out.println("Total Number of seconds is " + s);
+         
+    }
+}
