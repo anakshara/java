@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sh = new Scanner(System.in);
+        int p = sh.nextInt();
+        int q = sh.nextInt();
+        int r = sh.nextInt();
+        int s = sh.nextInt();
+        
+        System.out.println("Items Details");
+        System.out.println("A4sheet:" +p);
+        System.out.println("Pen:" +q);
+        System.out.println("Pencil:" +r);
+        System.out.println("Eraser:" +s);
+    }
+}
