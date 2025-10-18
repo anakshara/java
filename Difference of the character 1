@@ -1,0 +1,24 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+       char[] arr = s.toCharArray();
+        int countStar = 0;
+        int countHash = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == '*') {
+                countStar++;
+            } else if (arr[i] == '#') {
+                countHash++;
+            }
+        }
+        int diff = countStar - countHash;
+        if (diff == 0) {
+            System.out.println("0");
+        } else {
+            System.out.printf("The Difference of the character in the given string: %03d%n", Math.abs(diff));
+        }
+    }
+}
